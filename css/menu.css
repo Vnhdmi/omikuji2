@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+header {
+    margin-top: 40px;
+    color: rgba(21, 4, 253, 0.7);
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.65);
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+body {
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: url(../img/background.webp);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/*MENU APP*/
+
+.menubox {
+
+    backdrop-filter: blur(8px);
+    position: relative;
+    max-width: 430px;
+    width: 90%;
+    /*IPhone sacle*/
+    margin: 0 auto;
+    padding: 10px 10px;
+    padding-bottom: 23px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(184, 133, 194, 0.575);
+}
+
+.menugird {
+
+    display: grid;
+    gap: 0.5rem 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.item {
+    min-width: 0;
+    max-width: 100%;
+    padding: 0;
+
+}
+
+.item img {
+
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.item p {
+    font-size: 14px;
+
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer>p {
+    position: fixed;
+    /**絶対位置*/
+    bottom: 0;
+    /*下に固定*/
+    width: 100%;
+    margin: 0px;
+    padding: 1px;
+    color: whitesmoke;
+    font: 16px Rajdhani;
+    text-align: center;
+    background: rgba(2, 30, 39, 0.575);
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-position: 75% 0%;
+        background-size: auto 1000px;
+    }
+
+    header {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .menubox {
+        width: 260px;
+        height: auto;
+    }
+
+    .menugird {
+        margin: px;
+    }
+
+    /* .item img {
+        max-width: 100%;
+        height: auto;
+    } */
+}
